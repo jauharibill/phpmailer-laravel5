@@ -17,7 +17,8 @@ How to use it?
       
 4. then craete controller and feel it with method that contain the following code
 
-	> $mail = new \PHPMailer(true);
+			
+         $mail = new \PHPMailer(true);
     	try{
     		$mail-isSMTP();
     		$mail-CharSet = ; #set it utf-8
@@ -30,20 +31,22 @@ How to use it?
     		$mail-setFrom($request-email, $request-name); 
     		$mail-Subject = $request-subject;
     		$mail-MsgHTML($request-text);
-    		$mail-addAddress("recipientemail" ,"namerecipient"); 
+    		$mail-addAddress([resipientemail] ,[namerecipient]); 
     		$mail-send();
     	}catch(phpmailerException $e){
     		dd($e);
     	}catch(Exception $e){
     		dd($e);
-    	} die('success');
+    	} 
     
     
- 5. see example code in this repository. clone it look for > SendMail.php at Controller folder
+
+
+see example code in this repository. clone it look for > SendMail.php at Controller folder
  
  
  I've got clean testing and successful with my mail.
  if you are getting error, feel free to contact me or lay issues. i will response it as soon as possible.
  
 - Update  : 25-June-2016
-- Homepage Example : https://phpmailer.herokuapp.com/
+- Homepage Example : [https://phpmailer.herokuapp.com/](# PHPMailer in Laravel 5 Framework   PHPMailer on Laravel 5 . phpmailer is one of the most library that used to send email for free. now I wanna use it in laravel 5 framework  How to use it?  1. edit composer.json  2. add package to require-dev  	  > "phpmailer/phpmailer":"dev-master"      3. enter command        > composer update        4. then craete controller and feel it with method that contain the following code  	> $mail = new \PHPMailer(true); 
