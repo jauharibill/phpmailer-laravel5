@@ -8,10 +8,7 @@ use App\Http\Requests;
 
 class SendMail extends Controller
 {
-    // //
-    // public function __construct(){
-    // 	$this->middleware('auth');
-    // }
+	
     public function index(){
 
     	return View("form")->with('title','LaraMail');
@@ -23,14 +20,14 @@ class SendMail extends Controller
     		$mail->CharSet = 'utf-8';
     		$mail->SMTPAuth =true;
     		$mail->SMTPSecure = 'tls';
-    		$mail->Host = "smtp.gmail.com";
-    		$mail->Port = 587;
-    		$mail->Username = "bill.tanthowi.j@gmail.com";
-    		$mail->Password = "Cybercer0!@#";
-    		$mail->setFrom($request->email, $request->name);
+    		$mail->Host = "host"; //gmail has host > smtp.gmail.com
+    		$mail->Port = "port"; //gmail has port > 587 . without double quotes
+    		$mail->Username = "youremail@domain.com"; //your username. actually your email
+    		$mail->Password = "yourpassword"; // your password. your mail password
+    		$mail->setFrom($request->email, $request->name); 
     		$mail->Subject = $request->subject;
     		$mail->MsgHTML($request->text);
-    		$mail->addAddress("xcodebill@gmail.com" ,"Bill Tanthowi Jauhari");
+    		$mail->addAddress("recipientemail" ,"namerecipient"); 
     		$mail->send();
     	}catch(phpmailerException $e){
     		dd($e);
