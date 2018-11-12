@@ -46,15 +46,15 @@ How to use it?
     
 5. modify your .env file into like this
 
-	MAIL_DRIVER=smtp
-	MAIL_HOST=mailtrap.io
-	MAIL_PORT=2525
-	MAIL_USERNAME=null
-	MAIL_PASSWORD=null
-	MAIL_ENCRYPTION=null
+		MAIL_DRIVER=smtp
+		MAIL_HOST=mailtrap.io
+		MAIL_PORT=2525
+		MAIL_USERNAME=null
+		MAIL_PASSWORD=null
+		MAIL_ENCRYPTION=null
 
-	MY_EMAIL="bill@engineer.com"
-	MY_NAME="Bill Tanthowi Jauhari"
+		MY_EMAIL="bill@engineer.com"
+		MY_NAME="Bill Tanthowi Jauhari"
 
 note : I was add some constant variable that called `MY_EMAIL` and `MY_NAME` feel free to change it to be yours, and dont forget to fill `MAIL CONFIG` at above configuration to make your email works!
 
