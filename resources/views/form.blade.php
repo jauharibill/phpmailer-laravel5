@@ -22,14 +22,14 @@
   <fieldset>
     <legend>Send me E-Mail</legend>
     <div class="form-group">
-      <label for="inputEmail" class="col-md-2 control-label">Your Email</label>
+      <label for="inputEmail" class="col-md-2 control-label">Email</label>
 
       <div class="col-md-10">
         <input class="form-control" id="inputEmail" placeholder="Email" type="email" name="email" required>
       </div>
     </div>
     <div class="form-group">
-      <label for="Name" class="col-md-2 control-label">Your Name</label>
+      <label for="Name" class="col-md-2 control-label">Name</label>
       <div class="col-md-10">
         <input class="form-control" id="Name" placeholder="Name" type="name" name="name" required>
       </div>
